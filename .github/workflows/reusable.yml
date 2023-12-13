@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greet somone
-        run: echo "Hello ${{ inputs.who-to-greet }}
+        run: echo "Hello ${{ inputs.who-to-greet }}"
       - name: Set time
         id: time
-        run: echo "tim=$(date)" >> $GITHUB_OUTPUT
+        run: echo "time=$(date)" >> $GITHUB_OUTPUT
     outputs:
       current-time: ${{ steps.time.outputs.time }}
 
